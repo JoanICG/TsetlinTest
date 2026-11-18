@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Training data
+*.npy
+
+# Generated artifacts
+*.pkl
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# Logs and coverage
+*.log
+.coverage
+htmlcov/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.code-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
