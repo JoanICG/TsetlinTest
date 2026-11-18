@@ -23,25 +23,31 @@ source .venv/bin/activate
 pip install numpy matplotlib seaborn scikit-learn pillow pyTsetlinMachine
 ```
 
-## Data
+## Download the data and trained model
 
-Place the Quick Draw `.npy` files for the following classes in the project root:
+Download all six assets from the
+[v1.0.0 release](https://github.com/JoanICG/TsetlinTest/releases/tag/v1.0.0)
+and place them in the project root:
 
 - `dog.npy`
 - `cat.npy`
 - `horse.npy`
 - `elephant.npy`
 - `bear.npy`
+- `multiclass_model.pkl` (pretrained model for the drawing app)
 
-Each file must contain 28 x 28 grayscale images. The training script uses the
-first 2,500 samples from each class.
+The `.npy` files contain 28 x 28 grayscale Quick Draw images. The training
+script uses the first 2,500 samples from each class. The datasets and model are
+release downloads; they are not stored in Git history.
 
-The datasets are not included in this repository or its releases. Obtain the
-Quick Draw data separately and place the files above in the project root.
+After installing the requirements, run the drawing app with the included
+pretrained model:
 
-## Training
+```bash
+python test.py
+```
 
-Run:
+To train a new model from the downloaded datasets instead:
 
 ```bash
 python main.py
