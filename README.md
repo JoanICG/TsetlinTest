@@ -25,9 +25,15 @@ pip install numpy matplotlib seaborn scikit-learn pillow pyTsetlinMachine
 
 ## Download the data and trained model
 
-Download all six assets from the
+From the project root, download the release assets with GitHub CLI:
+
+```bash
+gh release download v1.0.0 --repo JoanICG/TsetlinTest
+```
+
+Or download all six assets from the
 [v1.0.0 release](https://github.com/JoanICG/TsetlinTest/releases/tag/v1.0.0)
-and place them in the project root:
+in your browser and save them in the project root:
 
 - `dog.npy`
 - `cat.npy`
